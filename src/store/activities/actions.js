@@ -4,11 +4,11 @@ const getActivity = async ({ commit }, payload = null) => {
   let activity = null;
   try {
     if (payload) {
-      activity = await axios.get('http://www.boredapi.com/api/activity', {
+      activity = await axios.get('https://www.boredapi.com/api/activity', {
         ...payload,
       });
     } else {
-      activity = await axios.get('http://www.boredapi.com/api/activity');
+      activity = await axios.get('https://www.boredapi.com/api/activity');
     }
   } catch (e) {
     throw new Error(e);

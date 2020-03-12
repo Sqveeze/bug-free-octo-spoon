@@ -127,7 +127,7 @@ export default {
       options: ['education', 'recreational', 'social', 'diy', 'charity', 'cooking', 'relaxation', 'music', 'busywork'],
       query: {
         type: 'education',
-        minprice: 0.5,
+        minprice: 0,
         maxprice: 0.1,
         participants: 1,
       },
